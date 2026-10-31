@@ -1,0 +1,7 @@
+risk_id,risk_title,risk_category,business_unit,description,likelihood,impact,control_effectiveness,owner,status,overdue_days
+RISK-001,Loan default exposure,Credit,Retail Banking,Potential borrower default,4,5,25,A Sharma,Open,12
+RISK-002,Payment processing failure,Operational,Payments,Payment processing interruption,3,4,50,R Kumar,Mitigating,5
+RISK-003,Core banking outage,Technology,IT Operations,Unplanned core platform outage,3,5,60,S Patel,Open,65
+RISK-004,Regulatory reporting delay,Compliance,Finance,Delayed regulatory submission,2,3,75,M Rao,Closed,0
+RISK-005,Funding shortfall,Liquidity,Treasury,Insufficient funds to meet obligations,4,4,20,V Singh,Open,35
+RISK-006,Unauthorized data access,Cybersecurity,Information Security,Unauthorized access to sensitive data,3,5,40,A Khan,Mitigating,18
