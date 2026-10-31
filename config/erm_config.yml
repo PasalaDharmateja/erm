@@ -1,25 +1,17 @@
-project:
-  name: banking-enterprise-risk-management
-  environment: dev
-paths:
-  input_file: data/input/risk_register.csv
-  output_dir: data/output
-  log_file: logs/erm_framework.log
-  audit_file: logs/audit.jsonl
-risk_scoring:
-  likelihood_min: 1
-  likelihood_max: 5
-  impact_min: 1
-  impact_max: 5
-  bands:
-    low: 4
-    medium: 9
-    high: 16
-controls:
-  effectiveness_min: 0
-  effectiveness_max: 100
-kri:
-  overdue_days_warning: 30
-  overdue_days_critical: 60
-reporting:
-  top_risks: 10
+input:
+  files:
+    - input/input_file_1.xlsx
+    - input/input_file_2.xlsx
+
+  sheet:
+    mode: first
+
+  header_row: 0
+  required_columns: []
+  allow_empty_files: false
+
+output:
+  file: output/combined_data.xlsx
+  sheet_name: Combined_Data
+  include_source_file_column: true
+  source_file_column: source_file
